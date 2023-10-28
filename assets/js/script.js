@@ -47,17 +47,19 @@ const mostrarSeries = ()=>{
 
     const series = datosSeries.forEach((perfil)=>{
         perfil.serie.forEach((dato)=>{
-            
             const li = document.createElement('li');
             const img = document.createElement('img');
             const p = document.createElement('p');
 
-            img.setAttribute('src', dato.url,'alt', dato.titulo);
-            img.classList.add('imagenesSeries');
-            p.textContent = dato.titulo;
-
-            li.append(img, p);
-            ul.appendChild(li);
+            if((dato.url.endsWith('jpg'))||(dato.url.endsWith('jpeg'))){    
+                img.setAttribute('src', dato.url,'alt', dato.titulo);
+                img.classList.add('imagenesSeries');
+                p.textContent = dato.titulo;
+                li.append(img, p);
+                ul.appendChild(li);
+            }else{
+                alert(`La imagen ${dato.titulo} no se leyó porque no es un archivo .jpg o .jpeg`);
+            }
             return contenedor.appendChild(ul);
         });
     });
