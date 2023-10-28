@@ -42,14 +42,23 @@ const datosSeries = [
 
 const mostrarSeries = ()=>{
     const contenedor = document.querySelector('[data-contenedorPeliculas]');
+    const ul = document.createElement('ul');
 
     const series = datosSeries.forEach((perfil)=>{
         perfil.serie.forEach((dato)=>{
+            
+            const li = document.createElement('li');
             const img = document.createElement('img');
+            const p = document.createElement('p');
+
             img.setAttribute('src',dato.url);
             img.setAttribute('alt', dato.titulo);
+            img.classList.add('imagenesSeries')
+            p.textContent = dato.titulo;
 
-            return contenedor.appendChild(img);
+            li.append(img, p);
+            ul.appendChild(li);
+            return contenedor.appendChild(ul);
         });
     });
 }
