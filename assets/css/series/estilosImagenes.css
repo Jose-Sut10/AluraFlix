@@ -1,0 +1,17 @@
+.contenido__contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido__contenedor--animesFav{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: calc(65vh + 10px);
+}
+
+.contenido__contenedor--animesFav > img{
+    width: 260px;
+    height: 180px;
+}

@@ -42,11 +42,14 @@ const datosSeries = [
 
 const mostrarSeries = ()=>{
     const contenedor = document.querySelector('[data-contenedorPeliculas]');
-    const img = document.createElement('img');
 
     const series = datosSeries.forEach((perfil)=>{
         perfil.serie.forEach((dato)=>{
-            console.log(dato.url);
+            const img = document.createElement('img');
+            img.setAttribute('src',dato.url);
+            img.setAttribute('alt', dato.titulo);
+
+            return contenedor.appendChild(img);
         });
     });
 }
