@@ -8,6 +8,8 @@
 
 body{
     background-image: url("https://raw.githubusercontent.com/Jose-Sut10/imagenes/main/chica_aanime.jpg");
+    background-size: cover;
+    background-position: center top;
 }
 
 .encabezado{

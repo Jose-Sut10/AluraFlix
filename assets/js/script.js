@@ -43,6 +43,7 @@ const datosSeries = [
 const mostrarSeries = ()=>{
     const contenedor = document.querySelector('[data-contenedorPeliculas]');
     const ul = document.createElement('ul');
+    ul.classList.add('contenido__lista');
 
     const series = datosSeries.forEach((perfil)=>{
         perfil.serie.forEach((dato)=>{
@@ -51,9 +52,8 @@ const mostrarSeries = ()=>{
             const img = document.createElement('img');
             const p = document.createElement('p');
 
-            img.setAttribute('src',dato.url);
-            img.setAttribute('alt', dato.titulo);
-            img.classList.add('imagenesSeries')
+            img.setAttribute('src', dato.url,'alt', dato.titulo);
+            img.classList.add('imagenesSeries');
             p.textContent = dato.titulo;
 
             li.append(img, p);
