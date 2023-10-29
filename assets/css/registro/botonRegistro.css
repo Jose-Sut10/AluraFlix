@@ -1,0 +1,17 @@
+.botonAgregar__serie{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #01BB69;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.botonAgregar__serie:hover{
+    opacity: 0.75;
+}
