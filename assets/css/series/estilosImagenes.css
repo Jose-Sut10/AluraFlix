@@ -1,10 +1,9 @@
 .contenido__contenedor{
     display: flex;
     justify-content: center;
-}
-
-.contenido__contenedor--animesFav{
+    flex-direction: column;
     width: 95%;
+    margin: 0 auto;
 }
 
 .contenido__lista{

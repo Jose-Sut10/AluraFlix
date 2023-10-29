@@ -1,0 +1,21 @@
+.contenido__contenedor--registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo--registro{
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.input__series{
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    width: 25rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 15px;
+    outline: none;
+}

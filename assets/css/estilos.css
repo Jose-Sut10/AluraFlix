@@ -1,5 +1,6 @@
 @import url("./reset.css");
 @import url("./series/estilosImagenes.css");
+@import url("./registro/input.css");
 
 *{
     margin: 0;
