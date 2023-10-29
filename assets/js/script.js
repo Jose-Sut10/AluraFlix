@@ -1,3 +1,4 @@
+import botonAgregar from "./agregarSerie/agregarSerie.js";
 import mostrarSeries from "./mostrar series/mostrarSeries.js";
 (()=>{
 
@@ -60,6 +61,6 @@ import mostrarSeries from "./mostrar series/mostrarSeries.js";
             titulo: "Cyberpunk: Edgerunners"
         }]
     });
-
+    botonAgregar(datosSeries);
     mostrarSeries(datosSeries);
 }) ();
