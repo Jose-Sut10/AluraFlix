@@ -7,7 +7,7 @@ const mostrarSeries = (datosSeries)=>{
 
     const series = datosSeries.forEach((perfil)=>{
         perfil.serie.forEach((dato)=>{
-            validarImagen(dato.url,dato.titulo,ul);
+            validarImagen(dato.url,dato.titulo,dato.urlTrailer,ul);
 
             return contenedor.appendChild(ul);
         });
