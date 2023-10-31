@@ -1,17 +1,30 @@
 .botonAgregar__serie{
     padding: 1rem;
-    margin-bottom: 1rem;
     width: 15rem;
     height: 3.5rem;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 10px;
-    cursor: pointer;
     background: #01BB69;
     color: #fff;
     transition: 0.3s;
 }
 
+.btnFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 .botonAgregar__serie:hover{
     opacity: 0.75;
+}
+
+@media screen and (max-width: 768px){
+    .botonAgregar__serie{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
 }

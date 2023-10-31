@@ -8,6 +8,7 @@
 }
 
 body{
+    font-family: 'Playpen Sans', cursive;
     background-image: url("https://raw.githubusercontent.com/Jose-Sut10/imagenes/main/chica_aanime.jpg");
     background-size: cover;
     background-position: center top;
@@ -41,5 +42,24 @@ body{
 
 img:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.14);
+}
+
+.contenido__contenedor--registro{
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-image: url("/assets/img/fondo.jpg");
+    }
+    .page-title{
+        font-size: 2rem;
+    }
+    .page-logo{
+        max-width: 12rem;
+    }
+    img:hover{
+        transform: none;
+    }
 }
