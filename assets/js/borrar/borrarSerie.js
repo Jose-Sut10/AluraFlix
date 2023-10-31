@@ -1,15 +1,15 @@
+const eliminarSerie = (datosSeries)=>{
+    const capturaIcono = document.getElementsByClassName('iconoBorrar');
+    const listaIconos = Array.from(capturaIcono);
 
-const eliminarSerie = (datos)=>{
-    //const capturaIcono = document.getElementsByClassName('fa-circle-minus');
-
-    const elementoEliminar = datos.forEach((elemento)=>{
-        elemento.serie.forEach((captura)=>{
-            
-            console.log(captura.titulo);
+    listaIconos.forEach((icono) => {
+        icono.addEventListener('click', (e) => {
+            e.preventDefault();
+            const listItem = icono.parentNode;
+            listItem.remove();
         });
     });
-
+    
 };
-
 
 export default eliminarSerie;

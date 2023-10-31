@@ -22,7 +22,9 @@ const agregarSerie = (datos,titulo,imagen,trailer)=>{
         recarga.innerHTML = '';
         datos.push({
             usuario: "",
+            id: uuid.v4(),
             serie: [{
+                idImagen: uuid.v4(),
                 url: imagen,
                 titulo: titulo,
                 urlTrailer: trailer
