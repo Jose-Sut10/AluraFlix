@@ -1,4 +1,4 @@
-const eliminarSerie = (datosSeries)=>{
+const eliminarSerie = ()=>{
     const capturaIcono = document.getElementsByClassName('iconoBorrar');
     const listaIconos = Array.from(capturaIcono);
 

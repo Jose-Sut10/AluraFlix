@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./series/estilosImagenes.css");
 @import url("./registro/input.css");
+@import url("./footer/footer.css"); 
 
 *{
     margin: 0;
@@ -45,8 +46,9 @@ img:hover{
     transform: scale(1.14);
 }
 
-.contenido__contenedor--registro{
-    margin-bottom: 1.2rem;
+
+.contenido__contenedor--animesFav{
+    padding: 1rem 0;
 }
 
 @media screen and (max-width: 768px){

@@ -1,7 +1,7 @@
 import botonAgregar from "./agregarSerie/agregarSerie.js";
 import mostrarSeries from "./mostrar series/mostrarSeries.js";
 import eliminarSerie from "./borrar/borrarSerie.js";
-//(()=>{
+(()=>{
 
     const datosSeries = [
         { 
@@ -56,5 +56,5 @@ import eliminarSerie from "./borrar/borrarSerie.js";
     });
     botonAgregar(datosSeries);
     mostrarSeries(datosSeries);
-    eliminarSerie(datosSeries);
-//}) ();
+    eliminarSerie();
+}) ();
