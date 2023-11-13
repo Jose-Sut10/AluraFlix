@@ -1,15 +1,27 @@
-const eliminarSerie = ()=>{
-    const capturaIcono = document.getElementsByClassName('iconoBorrar');
-    const listaIconos = Array.from(capturaIcono);
+const eliminarSerie = (datosSeries) => {
+    const contenedor = document.querySelector('[data-contenedorPeliculas]');
 
-    listaIconos.forEach((icono) => {
-        icono.addEventListener('click', (e) => {
+    contenedor.addEventListener('click', (e) => {
+        if (e.target.classList.contains('iconoBorrar')) {
             e.preventDefault();
-            const listItem = icono.parentNode;
+
+            const listItem = e.target.parentNode;
+            const img = listItem.querySelector('img');
+            const valorImagen = img.getAttribute('src');
+
             listItem.remove();
-        });
+
+            datosSeries.forEach((usuario, index) => {
+                usuario.serie.forEach((valorSerie, posicion) => {
+                    if (valorSerie.url === valorImagen) {
+                        datosSeries[index].serie.splice(posicion, 1);
+                    }
+                });
+            });
+        }
     });
-    
 };
+
+  
 
 export default eliminarSerie;
